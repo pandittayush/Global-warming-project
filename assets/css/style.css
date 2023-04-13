@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #400101;
+}
+/*headings and logo*/
+h1, h2 {
+    font-family: Merriweather, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #D93D04
+}
+#logo {
+    float: left;
+    font-size: 300%;
+}
+/*navigation*/
+#list {
+    letter-spacing: 2px;
+    font-size: 120%;
+}
+#list li {
+    list-style-type: none;
+    float: right;
+    margin-right: 25px;
+
+}
+#list a {
+    color:inherit;
+    text-decoration: none;
+    
+}
+
+#list, #logo {
+    line-height: 80px;
+}
+#list a:hover {
+    border-bottom: 2px solid #D93D04;;
+}
+.active {
+    border-bottom: 2px solid #D93D04;
+}
+/*main background image*/
+#hero-image {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+/*main content text*/
+.content {
+    position: relative;
+    background-color: white;
+    color: inherit;
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+.div-content a {
+    padding: 10px 20px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.div-content {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px 0px 10px;
+}
+/*box shadow effect was taken from (w3schools-https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_card)*/
+.content-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.content-p {
+  padding: 15px 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #400101;
+}
+
+.div-content h2 {
+    height: 10px;
+    padding: 15px 10px;
+}
+
+/*grid template code was taken from (w3schools-https://www.w3schools.com/cssref/pr_grid-template-columns.asp)*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container div:hover {
+    background-color: #b6f542;
+    color: #BF7960;
+}
+
+.left, .center, .right{
+    border-style: solid;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/*footer*/
+footer {
+    height: 80px;
+}
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 180%;
+    margin: 1%;
+    padding: 1%;
+    color: #D93D04;
+}
+
+.footer {
+    text-align: center; 
+    color: #D93D04;
+}
+
+.info {
+    text-align: center;
+    color: #D93D04;
+    font-size: 150%;
+    padding: 2px;
+}
+/*causes, effects and solutions webpages*/
+#second-main {
+    position: absolute;
+    padding: 5px 20px 0px 10px;
+    top: 80px;
+    margin: 5px;
+}
+
+div.description {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container-b{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.first, .second, .third{
+    margin: 100px 5px 0px 5px;
+    border: 2px solid #400101;
+}
+.fourth, .fifth, .sixth {
+    margin: 5px;
+    border: 2px solid #400101;
+} 
+.first>img, 
+.second>img, 
+.third>img,
+.fourth>img,
+.fifth>img,
+.sixth>img{
+    width: 400px;
+	height: 400px;
+	object-fit: cover;
+}
+   
+/* Form */
+#image {
+    background-size: cover;
+    background: center no-repeat;
+    width: 100%;
+    height: 900px;
+}
+
+.form {
+    clear: left;
+    position: absolute;
+    background-color: white;
+    color: #D93D04;
+    padding: 20px;
+    bottom: 250px;
+    left: 50px;
+    right: 1000px;
+    height: 450px;
+}
+ 
+.text-input {
+    color: black;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #400101;
+    border-radius:2px;
+}
+.text-input:hover {
+    border-color: #f16c6b;
+}
+.signup > h2 {
+    color: #D93D04;
+    margin-bottom: 20px;
+}
+.comments-input {
+    height: 60px;
+}
+
+.signup-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    text-align: left;
+    font-size: 100%;
+    background-color: #400101;
+    color: white;
+    display: block;
+}
+
+.signup-button:hover {
+    background-color: #D93D04;
+    color: #400101;
+}
+/*Media queries*/
+/*For larger to medium screens size from 1300px wide and down*/
+@media screen and (max-width: 1300px) {
+    .content {
+        width: 100%;
+        height: auto;
+        left: 0px;
+    }
+    .form {
+        padding: 10px;
+        height: fit-content;
+        width: 30%;
+        top: 200px;
+    } 
+}
+
+
+/*For larger to medium screens size from 1200px wide and down*/
+@media screen and (max-width: 1200px) {
+#hero-image {
+    position: relative;
+}
+.content {
+    left: 0px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.grid-container {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    display: inline;
+}
+.left, .center, .right {
+    margin: 5px;
+}
+#second-main {
+    padding: 0;
+    height: auto;
+    margin: 15px 40px 10px;
+}
+
+.container,.container-b{
+    display: inline-block;
+    padding: 50px;
+    margin: 0px;
+    text-align: center;
+}
+.fourth, .fifth, .sixth{
+    margin: 100px 5px 0px
+}
+
+.form {
+    padding: 10px;
+    height: fit-content;
+    width: 50%;
+    bottom: 500px;
+} 
+
+br {
+    display: none;
+}
+}
+/*For medium screen sizes from 950px wide and down*/
+@media screen and (max-width: 950px) {  
+    .content {
+        left: 0;
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+    }
+    #second-main {
+        padding: 0;
+        width: 90%;
+        height: auto;
+        margin: 50px 40px 10px;
+    }
+    .form {
+        padding: 10px;
+        height: fit-content;
+        width: 50%;
+        top: 300px;
+    } 
+}
+
+/* For small screen sizes 800px and down */
+@media screen and (max-width: 800px) {   
+    .content {
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+    }
+    #list {
+        list-style-type: none;
+        float: right;
+        letter-spacing: 0px;
+    }
+    #logo {
+        font-size: 200%;
+    }
+}
+
+/* For small screen sizes 425px and down */
+@media screen and (max-width: 425px) {   
+    .content {
+     width: 65%;
+     height: auto;
+    }
+    #logo {
+        font-size: 150%;
+    }
+    #hero-image {
+        height: 300px;
+    }
+    #list {
+        letter-spacing: 0px;
+        font-size: 70%;
+    }
+    .left, .center, .right {
+        margin: 10px;
+    }
+    .content-img {
+        text-align: center;
+        width: 250px;
+        height: 250px;
+    }
+    #second-main {
+        width: 90%;
+        height: auto;
+        margin: 80px 20px 5px;
+        padding: 10px;
+    }
+    .container{
+        text-align: center;
+        display: inline;
+        height: 60%;
+        margin: 190px 0px 5px;
+        padding: 10px;
+    }
+
+    .container-b {
+        text-align: center;
+        height: 60%;
+        margin: 10px 0px 5px;
+        padding: 10px;
+    }    
+    div.description {
+        font-weight: 100;
+    }
+
+    .first>img, 
+    .second>img, 
+    .third>img,
+    .fourth>img,
+    .fifth>img,
+    .sixth>img{
+    width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+.form {
+    padding: 10px 30px;
+    height: fit-content;
+    width: 60%;
+    top: 400px;
+} 
+
+
+}
